@@ -9,4 +9,4 @@ data2<-subset.data.frame(x=data,select=c(Global_active_power,Date,Time));
 png("plot2.png",width = 480, height = 480, units = "px");#open png file
 data2$Date_and_Time<-strptime(dt,format="%d/%m/%Y %H:%M:%S",tz="GMT"); #convert date and time into Posix type
 plot(data2$Date_and_Time,data2$Global_active_power,type="s",ylab="Global Active Power (kilowatts)",xlab=""); #plot
-dev.off();
+dev.off();#close device
