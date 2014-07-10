@@ -22,4 +22,4 @@ lines(data2$Date_and_Time,data2$Sub_metering_3,col="blue");
 legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=1, bty="n",col=c("black","red","blue"),box.lwd = 0,box.col = "white",bg = "white")
 #plot 4
 plot(data2$Date_and_Time,data2$Global_reactive_power/10,type="s",ylab="Global_reactive_power",xlab="datetime");
-dev.off();
+dev.off();#close device
